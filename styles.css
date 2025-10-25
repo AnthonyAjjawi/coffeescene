@@ -22,7 +22,21 @@ h2 {
     color: var(--coffee);
     font-weight: 700;
     font-family: "Playfair Display";
-    font-size: 3.2rem;
+    font-size: 4.2rem;
+}
+
+h4 {
+    color: var(--coffee);
+    font-weight: 700;
+    font-family: "Playfair Display";
+    font-size: 1.75rem;
+}
+
+p {
+    font-family: "Playfair Display";
+    color: #707070;
+    font-size: 1.26rem;
+    
 }
 
 .discover-the-best-coffee-description {
@@ -176,8 +190,9 @@ h2 {
 }
 
 .discover-the-best-coffee-image img {
-     /* aspect-ratio: 96.8; */
+     aspect-ratio: 1/1;
      width: 100%;
+     object-fit: contain;
 }
 
 /* third section */
@@ -199,13 +214,19 @@ h2 {
     width: 28%;
     max-width: 376px;
     position: absolute;
-    bottom: 85%;
+    bottom: 78%;
     z-index: 0;
 }
 
 .new-blend-of-coffee-title {
-   
+    padding-top: 2rem;
     text-align: center;
+}
+
+.new-blend-of-coffee-description {
+    text-align: center;
+    padding: 1rem 0;
+    
 }
 
 .card-container {
@@ -221,7 +242,6 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
     width: 24%;
 }
 
@@ -229,6 +249,72 @@ h2 {
 
     width: 100%;
     aspect-ratio: 280 / 222;
-    object-fit: cover;
+    object-fit: contain;
 
+}
+
+.card-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(249, 192, 106, 0.1 );
+    width: 100%;
+    border-top: 0;
+    border-right: 1px solid rgba(249, 192, 106, 1);
+    border-left: 1px solid rgba(249, 192, 106, 1);
+    border-bottom: 1px solid rgba(249, 192, 106, 1);
+}
+
+.card-items > .hero-link {
+    transform: translateY(50%);
+}
+
+/* fourth section - why we are different */
+.why-are-we-different-section {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.coffee-splash-right {
+    width: 27%;
+    max-width: 373px;
+    position: absolute;
+    left: 75%; 
+    bottom: 80%;
+    z-index: 0;
+}
+
+.card-container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.why-are-we-different-description {
+    padding: 1rem 0;
+}
+
+.why-we-are-different-description {
+    padding: 1rem 0;
+}
+
+.why-are-we-different-section > .card-container > .card-item {
+    padding: 1rem;
+    background-color: #FFEED8;
+    
+}
+
+.why-are-we-different-section > .card-container > .card-item > .icon {
+    width: 30%;
+    height: 88px;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+
+.icon-title {
+    padding-bottom: 1rem;
 }
