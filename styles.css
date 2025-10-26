@@ -318,3 +318,38 @@ p {
 .icon-title {
     padding-bottom: 1rem;
 }
+
+.why-are-we-different-section > .hero-link {
+    margin-bottom: 2rem;
+}
+
+/* fifth section */
+.amazing-morning-section {
+    background: linear-gradient(
+        rgba(96, 56, 9, 0.8), 
+        rgba(96, 56, 9, 0.8)
+    ),
+    url(./assets/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-height: 574px;
+    height: clamp(300px, 42.8vw, 574px);
+}
+
+.hero-container {
+    display: flex;
+    width: 100%;
+}
+
+.amazing-morning-item-container {
+    width: 50%;
+}
+
+.amazing-morning-img {
+    width: 50%;
+}
+
+.amazing-morning-img .coffee-cup {
+    width: 100%
+}
